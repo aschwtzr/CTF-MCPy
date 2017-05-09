@@ -19,6 +19,7 @@ class trap(object):
         self.y = y
         self.z = z
         self.name = name
+        
 #red team
 ratInACage = trap(15,60,372,"ratInCage")
 fireTrap = trap(26,60,372,"fireTrap")
