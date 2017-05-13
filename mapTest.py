@@ -6,15 +6,15 @@ from threading import Thread
 threads = []
 
 blue = {
-"SuhaibThePro": vec3.Vec3(1,2,3),"Mirna1000": vec3.Vec3(1,2,3),
-"Ahmidoo": vec3.Vec3(1,2,3),"Albertthe3": vec3.Vec3(1,2,3),"SuhaibThePro": vec3.Vec3(1,2,3),"Mirna1000": vec3.Vec3(1,2,3),
-"Ahmidoo": vec3.Vec3(1,2,3),"Albertthe3": vec3.Vec3(1,2,3)
+"Albertthe3": vec3.Vec3(1,2,3),"Albertthe3": vec3.Vec3(1,2,3),
+"Albertthe3": vec3.Vec3(1,2,3),"Albertthe3": vec3.Vec3(1,2,3),"Albertthe3": vec3.Vec3(1,2,3),"Mirna1000": vec3.Vec3(1,2,3),
+"Albertthe3": vec3.Vec3(1,2,3),"Albertthe3": vec3.Vec3(1,2,3)
 }
 
 red = {
-"SuhaibThePro": vec3.Vec3(1,2,3),"Mirna1000": vec3.Vec3(1,2,3),
-"Ahmidoo": vec3.Vec3(1,2,3),"Albertthe3": vec3.Vec3(1,2,3),"SuhaibThePro": vec3.Vec3(1,2,3),"Mirna1000": vec3.Vec3(1,2,3),
-"Ahmidoo": vec3.Vec3(1,2,3),"Albertthe3": vec3.Vec3(1,2,3)
+"Albertthe3": vec3.Vec3(1,2,3),"Albertthe3": vec3.Vec3(1,2,3),
+"Albertthe3": vec3.Vec3(1,2,3),"Albertthe3": vec3.Vec3(1,2,3),"Albertthe3": vec3.Vec3(1,2,3),"Mirna1000": vec3.Vec3(1,2,3),
+"Albertthe3": vec3.Vec3(1,2,3),"Albertthe3": vec3.Vec3(1,2,3)
 }
 
 class trap(object):
@@ -44,6 +44,7 @@ class teamThread(Thread):
     def run(self):
         for player in self.team:
             thread = trapThread(player, self.team[player], self.traps)
+            print("p thread")
             thread.start()
 
 class trapThread(Thread):

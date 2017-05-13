@@ -1,8 +1,8 @@
 import mcpi.minecraft as minecraft
 
 mc = minecraft.Minecraft.create()
-blueStrings = ["SuhaibThePro","Mirna1000","Ahmidoo","Albertthe3"]
-redStrings = ["Albertthe3","FIRE_DRAGON100","Ssanso"]
+blueStrings = ["Albertthe3","Albertthe3","Albertthe3","Albertthe3","Albertthe3","Albertthe3"]
+redStrings = ["Albertthe3","Albertthe3","Albertthe3","Albertthe3","Albertthe3","Albertthe3"]
 
 def getBlueRed():
     blue = {}

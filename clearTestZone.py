@@ -9,8 +9,8 @@ x,y,z = 7,60,364
 
 spacing = 8
 
-rows = 2
-columns = 3
+rows = 3
+columns = 2
 
 startZ = z
 startX = x
@@ -22,6 +22,7 @@ def clearTestZone():
     zWidth = columns * parcelWidth + spacing * (columns + 2)
 
     mc.setBlocks(x,y,z,x+xLength,y+50,z+zWidth,0)
+    mc.setBlocks(x,y-5,z,x+xLength,y-1,z+zWidth,1)
     #return xLength, zWidth
 
 clearTestZone()
@@ -32,7 +33,7 @@ for row in range(rows):
     for column in range(columns):
         #add padding to x
         x += spacing
-        mc.setBlocks(x,y,z,x+parcelLength,y,z+parcelWidth,1)
+        mc.setBlocks(x,y-5,z,x+parcelLength,y,z+parcelWidth,1)
         parcelCoordinates.append([x,y,z])
         #add parcelLength offset to x
         x += parcelLength
