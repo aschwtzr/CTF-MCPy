@@ -9,8 +9,8 @@ x,y,z = 7,60,364
 
 spacing = 8
 
-rows = 3
-columns = 2
+rows = 2
+columns = 3
 
 startZ = z
 startX = x
