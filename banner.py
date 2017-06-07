@@ -144,10 +144,11 @@ def placeBanner(x,y,z,banner, color):
         x=startingX
 
 bayan = ScoreBoard(-6, 98, -94, bayan, 13)
-bayan.placeScore(zero)
+bayan.placeScore(two)
 ikns = ScoreBoard(30, 98, -94, ikns, 14)
 ikns.placeScore(zero)
 
+mc.player.setTilePos(30, 98, -94)
 #ikns.clear()
 #bayan.clear()
 

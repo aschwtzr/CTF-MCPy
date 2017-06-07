@@ -24,13 +24,13 @@ class Trap(object):
         self.name = name
 
 #put both the traps into lists
-redTraps = [Trap(15,60,372,"ratInCage"),
-            Trap(26,60,372,"fireTrap"),
-            Trap(37,60,372,"Ssanso")]
+redTraps = [Trap(84,649,-167,"khalidTrap1"),
+            Trap(50,69,-164,"khalid2"),
+            Trap(-14,69,146,"sufferInSand")]
 
-blueTraps = [Trap(15,60,380,"earthSwallow"),
-             Trap(26,60,380,"ahmedoo"),
-             Trap(37,60,380, "lavaPool")]
+blueTraps = [Trap(61,68,-169,"earthSwallow"),
+             Trap(51,76,-156,"lavaPool"),
+             Trap(54,76,-162, "nadia")]
 
 print(redTraps)
 print(blueTraps)

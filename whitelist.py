@@ -1,8 +1,8 @@
 from player import Player
 
 # write in the username for each player here, divided into teams
-blueStrings = ["Albertthe3","Ssanso","emeran1"]
-redStrings = ["emeran1","_Biohazard_","SuhaibThePro","Ahmidoo","Albertthe3"]
+blueStrings = ["IKNS1","IKNS2","IKNS3", "IKNS4","IKN5","IKNS6","Albertthe3"]
+redStrings = ["Bayan1","Bayan2","Bayan3", "Bayan4","Bayan5","Bayan6","Albertthe3"]
 
 #function takes a minecraft instance
 def getBlueRed(minecraftInstance):

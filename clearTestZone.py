@@ -5,11 +5,13 @@ mc = minecraft.Minecraft.create()
 
 parcelLength = 3
 parcelWidth = 3
-x,y,z = 7,60,364
+x,y,z = 7,100,364
+
+mc.player.setTilePos(x,y+8,z)
 
 spacing = 8
 
-rows = 2
+rows = 4
 columns = 3
 
 startZ = z
@@ -39,9 +41,5 @@ for row in range(rows):
         x += parcelLength
     z+= spacing
     x = startX
-        
+
 print(parcelCoordinates)
-
-
-
-
