@@ -1,4 +1,4 @@
-import trapQueen
+import trapManager
 
 class Player(object):
     def __init__(self,entityId,position):
@@ -6,10 +6,10 @@ class Player(object):
         self.position = position
 
     def checkTraps(self, trap):
-
         pos = self.position
-        if trap.z < pos.z < trap.z + 3:
-            if trap.x < pos.x < trap.x + 3:
-                if trap.y < pos.y < trap.y + 3:
+
+        if trap.z <= pos.z <= trap.z + 3:
+            if trap.x <= pos.x <= trap.x + 3:
+                if trap.y <= pos.y <= trap.y + 3:
                     print(trap.name, True)
-                    trapQueen.activateTrap(trap.name, self.entityId)
+                    trapManager.activateTrap(trap.name, self.entityId)
